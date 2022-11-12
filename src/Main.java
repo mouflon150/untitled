@@ -3,26 +3,37 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int firstNumber = scanner.nextInt();
-        int secondNumber = scanner.nextInt();
+        double firstNumber = scanner.nextInt();
+        double secondNumber = scanner.nextInt();
         char operation = scanner.next().charAt(0);
         switch (operation) {
-            case '+':
-                System.out.println(plus(firstNumber,secondNumber));
-                break;
-            case '-':
-                System.out.println(minus(firstNumber,secondNumber));
-                break;
+            case '+' -> System.out.println(plus(firstNumber, secondNumber));
+            case '-' -> System.out.println(minus(firstNumber, secondNumber));
+            case '*' -> System.out.println(multiplication(firstNumber, secondNumber));
+            case '/' -> System.out.println(division(firstNumber, secondNumber));
+            default -> System.out.println("Неправильная операция!");
         }
 
 
+    }
 
+    public static double plus(double firstNumber, double secondNumber) {
+        return firstNumber + secondNumber;
     }
-    public static int plus (int a, int b) {
-        return a + b;
+
+    public static double minus(double firstNumber, double secondNumber) {
+        return firstNumber - secondNumber;
     }
-    public static int minus (int a, int b) {
-        return  a - b;
-        //write your code here
+
+    public static double multiplication(double firstNumber, double secondNumber) {
+        return firstNumber * secondNumber;
+    }
+
+    public static double division(double firstNumber, double secondNumber) {
+        if (secondNumber == 0) {
+            System.out.println("На нуль делить нельзя!");
+        }
+        return firstNumber / secondNumber;
+
     }
 }
