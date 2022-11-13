@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double firstNumber = scanner.nextInt();
-        double secondNumber = scanner.nextInt();
+        double firstNumber = scanner.nextDouble();
+        double secondNumber = scanner.nextDouble();
         char operation = scanner.next().charAt(0);
         switch (operation) {
             case '+' -> System.out.println(plus(firstNumber, secondNumber));
