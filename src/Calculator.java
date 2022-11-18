@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Calculator {
     public static void main(String[] args) {
         String[] strings = new String[]{"Введите первое число: ", "Введите второе число: ",
                 "Выберите операцию: " + "\n".concat("""
@@ -42,6 +42,7 @@ public class Main {
             System.out.println("На нуль делить нельзя!");
         }
         return firstNumber / secondNumber;
+
 
     }
 }
