@@ -25,7 +25,7 @@ public class Calculator {
 
             }
         } catch (Exception exception) {
-            System.out.println("Программа завершена.");
+            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
         }
     }
 
