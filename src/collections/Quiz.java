@@ -19,7 +19,7 @@ public class Quiz {
             System.out.println(l);
         }
 
-        // Очередь
+        // Очереди
         Queue<Integer> queue = new PriorityQueue<>(5);
         queue.add(15);
         queue.add(1);
