@@ -39,9 +39,9 @@ public class Quiz {
 }
 
 class User {
-    private String userName;
-    private String userSurname;
-    private int userAge;
+    private final String userName;
+    private final String userSurname;
+    private final int userAge;
 
     public User(String userName, String userSurname, int userAge) {
         this.userName = userName;
@@ -51,7 +51,7 @@ class User {
 
     @Override
     public String toString() {
-        return "name: " + userName + "\n" + "surname: " + userSurname + "\n" + "age: " + userAge;
+        return "name: " + userName + "\n" + "surname: " + userSurname + "\n" + "age: " + userAge + "\n";
     }
 }
 

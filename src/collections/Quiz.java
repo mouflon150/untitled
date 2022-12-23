@@ -42,6 +42,12 @@ public class Quiz {
         stringSet.add("Bakyt");
         System.out.println(stringSet.contains("Marlen"));
 
+        Stack<String> stack = new Stack<>();
+        stack.add("Call of Duty");
+        stack.add("Super Monkey Ball");
+        stack.add("Counter Strike");
+        stack.peek();
+        System.out.println(stack);
     }
 }
 
