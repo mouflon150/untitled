@@ -2,7 +2,7 @@ package collections.SetAndHashSet;
 
 import java.util.*;
 
-public class Main {
+public class Example {
 
     public static int getSum(List<Integer> nums) {
         int sum = 0;
