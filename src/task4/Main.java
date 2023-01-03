@@ -1,28 +1,39 @@
 package task4;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Random;
 
-public class Main {
+public class Main implements Comparable<Integer> {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        FileWriter fileWriter = new FileWriter("Alphabet.txt");
-        fileWriter.write("""
-                Aa Bb Cc Dd Ee Ff Gg
-                Hh Ii Jj Kk Ll Mm Nn
-                Oo Pp Qq Rr Ss Tt Uu
-                Vv Ww Xx Yy Zz""" + "\n");
-        fileWriter.write("1 2 3 4 5 6 7 8 9");
-        fileWriter.close();
+        Random random = new Random();
+        ArrayList<Integer> arrayList = new ArrayList<>(2);
 
-        FileReader fileReader = new FileReader("Alphabet.txt");
-        Scanner scanner = new Scanner(fileReader);
-        while (scanner.hasNextLine()) {
-            System.out.println(scanner.nextLine());
+        int[] arr = new int[2];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(2);
         }
-        fileWriter.close();
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
+                }
+            }
+        }
+
+        for (int j : arr) {
+            System.out.print(j + " ");
+        }
+        System.out.println();
+
+
+    }
+
+    @Override
+    public int compareTo(Integer o) {
+        return 0;
     }
 }
