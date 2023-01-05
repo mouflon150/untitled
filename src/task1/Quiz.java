@@ -5,9 +5,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Quiz {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         List<User> userList = new ArrayList<>();
+
         do {
             System.out.println("1 --> save user");
             System.out.println("2 --> find all");

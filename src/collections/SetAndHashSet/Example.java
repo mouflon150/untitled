@@ -16,6 +16,7 @@ public class Example {
 
         Random random = new Random();
         List<Integer> ints = new ArrayList<>();
+
         for (int i = 1; i <= 100; i++) {
             int randomNums = random.nextInt(1, 400);
             ints.add(randomNums);
@@ -23,6 +24,7 @@ public class Example {
         System.out.println("Sum of all numbers: " + getSum(ints));
 
         Set<Integer> set = new HashSet<>(ints);
+
         set.forEach(System.out::println);
     }
 }
