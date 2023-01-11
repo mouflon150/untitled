@@ -1,10 +1,8 @@
 package task3;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
-@ToString
 public class Car implements AutoCloseable, Rideable {
 
     private String brand;

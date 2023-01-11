@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class Main {
-    static String[] names = {"Bella", "Tiger", "Chloe", "Shadow", "Luna", "Oreo", "Oliver", "Kitty", "Lucy", "Molly", "Jasper", "Smokey", "Gizmo", "Simba", "Tiger",
+    static  final String[] names = {"Bella", "Tiger", "Chloe", "Shadow", "Luna", "Oreo", "Oliver", "Kitty", "Lucy", "Molly", "Jasper", "Smokey", "Gizmo", "Simba", "Tiger",
             "Charlie", "Angel", "Jack", "Lily", "Peanut", "Toby", "Baby", "Loki", "Midnight", "Milo", "Princess", "Sophie", "Harley", "Max", "Missy", "Rocky", "Zoe", "CoCo", "Misty", "Nola",
             "Oscar", "Pepper", "Sasha", "Pumpkin", "Kiki", "Mittens", "Callie", "Lucky", "Patches", "Simon", "Garfield", "George", "Maggie", "Sammy", "Sebastian", "Boots", "Cali", "Felix", "Lilly",
             "Phoebe", "Sassy", "Tucker", "Bandit", "Dexter", "Fiona", "Jake", "Precious", "Romeo", "Snickers", "Socks", "Daisy", "Gracie", "Lola", "Sadie", "Sox", "Casper", "Fluffy", "Marley", "Minnie",

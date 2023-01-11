@@ -11,12 +11,4 @@ public class Cat {
         this.name = name;
         this.age = age;
     }
-
-    @Override
-    public String toString() {
-        return "\nCat(" +
-                "name = " + name +
-                ", age = " + age +
-                ')';
-    }
 }
